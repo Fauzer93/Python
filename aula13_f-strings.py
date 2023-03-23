@@ -12,6 +12,6 @@ print(linha_1)
 print(linha_2)
 print(linha_3)
 
-# Fauzer SAntos tem 1.81 de altura
+# Fauzer Santos tem 1.81 de altura
 # pesa 72 quilos e seu IMC é
 # 21.98
