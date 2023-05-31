@@ -8,6 +8,8 @@ while True:
     operador = input('Digite um operador (+ - / *): ')
 
     num_validos =  None
+    num_1_float = 0
+    num_2_float = 0
 
     try:
         num_1_float = float(num_1)
@@ -21,9 +23,25 @@ while True:
         continue
 
     operador_permitidos = '+-/*'
+    if operador not in operador_permitidos:
+        print('Operador Inválido')
 
+    if len(operador) > 1:
+        print('Digite apenas um operador')
+        continue
+    
+    print('Realizando sua conta. Confira o resultado abaixo:')
 
-
+    if operador == '+':
+        print(f'{num_1_float}+{num_2_float}=', num_1_float + num_2_float)
+    elif operador == '-':
+        print(f'{num_1_float}-{num_2_float}=', num_1_float - num_2_float)
+    elif operador == '/':
+        print(f'{num_1_float}/{num_2_float}=',num_1_float / num_2_float)
+    elif operador == '*':
+        print(f'{num_1_float}*{num_2_float}=', num_1_float * num_2_float)
+    else:
+        print('Nunca deveria chega aqui')
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
 
     if sair is True:
