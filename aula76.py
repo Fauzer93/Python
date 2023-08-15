@@ -10,8 +10,8 @@
 # popitem - Apaga o último item adicionado
 # update - Atualiza um dicionário com outro
 p1 = {
-    'nome': 'Luiz',
-    'sobrenome': 'Miranda',
+    'nome': 'Fauzer',
+    'sobrenome': 'Santos',
 }
 # print(p1['nome'])
 # print(p1.get('nome', 'Não existe'))
